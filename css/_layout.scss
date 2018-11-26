@@ -1,0 +1,42 @@
+$bg_color: rgba(0, 0, 0, 0.2);
+$white: #FFF;
+
+body {
+  background-color: $white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-size: 20px;
+}
+
+.text {
+  background-color: $bg_color;
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+}
+
+
+@media all and (min-width: 768px) {
+  h1{
+    font-size: 30px;
+  }
+  .text{
+    margin-top: 20%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  body{
+    width: 1440px;
+    margin: 0 auto;
+    background-size: 1440px auto;
+    background-position: center top;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+}

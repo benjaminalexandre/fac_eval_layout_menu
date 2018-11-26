@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eval Layout menu</title>
+    <link rel="stylesheet" href="css/mon_site.css">
+</head>
+<body style="background-image: url('img/cerise.jpg')">
+<div class="header">
+    <nav>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="cerise.html">Cerise</a></li>
+                <li><a href="poire.html">Poire</a></li>
+                <li><a href="pomme.html">Pomme</a></li>
+                <li><a href="tomate.html">Tomate</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="text">
+    <h1>Cerise</h1>
+</div>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        if(document.getElementsByClassName("menu")[0].style.display === "block")
+            document.getElementsByClassName("menu")[0].style.display = "none";
+        else
+            document.getElementsByClassName("menu")[0].style.display = "block";
+    }
+</script>
+</body>
+</html>
